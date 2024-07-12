@@ -1,0 +1,28 @@
+.wraper {
+    position: relative;
+    z-index: 1000; /* Ajustez cette valeur selon vos besoins */
+    background-color: darkgoldenrod; /* Arrière-plan blanc semi-transparent */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: 50px;
+}
+  
+  
+  .titre {
+    font-size: 4rem;
+    color:black;
+    margin-left: 50px;
+    text-transform: capitalize;
+
+     
+  }
+  
+  .icon {
+    font-size: 2rem;
+    color: rgb(15, 13, 1);
+    margin-right: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,115 @@
+.skills-page {
+    position: relative;
+    padding: 2rem;
+    background-color: transparent;
+    min-height: 100vh;
+    z-index: 1;
+  }
+  
+  #tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .skills-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .skill-category {
+    background-color: rgba(248, 248, 243, 0.9);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 2rem);
+    min-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .category-title {
+    color: black;
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #15d6e4;
+    padding-bottom: 0.5rem;
+    background-color: rgb(250, 253, 34);
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-bottom: 0.3rem;
+    color: maroon;
+  }
+  
+  .skill-bar {
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .skill-progress {
+    height: 100%;
+    background-color: rgb(1, 18, 18);
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .skill-percentage {
+    align-self: flex-end;
+    font-size: 2rem;
+    color: black;
+    margin-top: 0.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .skill-category {
+      width: 100%;
+    }
+  }
+  
+  /* Styles pour le PageHeader si nécessaire */
+  .page-header {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 1rem 0;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .page-header .icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }

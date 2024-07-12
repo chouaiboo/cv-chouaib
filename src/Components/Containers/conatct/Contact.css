@@ -1,0 +1,100 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.particles-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Particules derrière le formulaire */
+}
+
+.contact-card {
+  filter: drop-shadow(0px 10px 20px rgb(252, 229, 100));
+  background-color: white;
+  filter: drop-shadow(0px 10px 20px rgb(245, 236, 187));
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  z-index: 3; /* Formulaire devant les particules */
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  text-shadow: 2px 0px 14px gold;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  filter: drop-shadow(9px 0px 15px rgb(15, 13, 3));
+  align-items: center;
+}
+
+.submit-btn:hover {
+  background-color: #357abd;
+}
+
+.submit-btn svg {
+  margin-right: 8px;
+}
+
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 20px;
+  }
+}
