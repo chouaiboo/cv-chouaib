@@ -35,7 +35,7 @@ const About = () => {
   return (
 
   <>
-  <Particles/>
+  {/* <Particles/> */}
   
     <div className='about' id='about'>
       <PageHeader title="About Me" icon={<FaUser />} />

@@ -8,7 +8,7 @@ import Particles from "../../Particle";
 const Home = () => {
   return (
     <>
-      <Particles />
+      {/* <Particles /> */}
       <section className="home">
         <div className="home-content">
           <div className="home-text">

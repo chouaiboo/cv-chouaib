@@ -28,7 +28,7 @@ const Contact = () => {
 
   return (
     <>
-      <Particles />
+      {/* <Particles /> */}
       <PageHeader title="Contact" icon={<FaEnvelope />} />
       <div className="contact-container">
         <div className="contact-card">

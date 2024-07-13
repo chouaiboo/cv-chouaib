@@ -33,7 +33,7 @@ const Skills = () => {
 
   return (
     <div className="skills-page">
-      <Particles />
+      {/* <Particles /> */}
       <PageHeader title="My Skills" icon={<FaUser />} />
       <div className="skills-container">
         {job.map((category, index) => (

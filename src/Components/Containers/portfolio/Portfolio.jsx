@@ -58,7 +58,7 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
-      <Particles />
+      {/* <Particles /> */}
     </div>
   );
 }
