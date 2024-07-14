@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évaluation de Sommeil</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(to bottom, #00c6ff, #0072ff);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .center-box {
+            background: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-style: italic;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .result-box {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .info-text {
+            color: #ffffff;
+            max-width: 600px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Évaluez votre sommeil</h1>
+    
+    <div class="center-box">
+        <p>Votre qualité de sommeil est de niveau :</p>
+        <div class="result-box">
+            {{resultat}}
+        </div>
+    </div>
+    
+    <p class="info-text">
+        Un bon sommeil est essentiel pour votre santé et votre bien-être. 
+        Il aide à restaurer votre corps et votre esprit. 
+        Des habitudes de sommeil régulières peuvent améliorer votre qualité de vie.
+    </p>
+</body>
+</html>
