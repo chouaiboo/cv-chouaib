@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaUser, FaEnvelope, FaComment, FaPaperPlane } from "react-icons/fa";
 import './Contact.css';
-import Particles from '../../Particle';
+import Particles from "../../Particle";
 import PageHeader from '../../../pageHeaderContent/PageHeader';
 import Social from './Social';
 
@@ -28,7 +28,7 @@ const Contact = () => {
 
   return (
     <>
-      {/* <Particles /> */}
+    <Particles />
       <PageHeader title="Contact" icon={<FaEnvelope />} />
       <div className="contact-container">
         <div className="contact-card">

@@ -3,12 +3,11 @@
 import React from "react";
 import "./Home.css";
 import cv from "../../../Assiete/image/cv.jpg";
-import Particles from "../../Particle";
-
+import Particle from "../../Particle";
 const Home = () => {
   return (
     <>
-      {/* <Particles /> */}
+    <Particle/>
       <section className="home">
         <div className="home-content">
           <div className="home-text">

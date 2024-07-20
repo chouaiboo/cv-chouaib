@@ -1,7 +1,6 @@
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim";
-import './Particle.css';
 
 const ParticlesComponent = (props) => {
   const [init, setInit] = useState(false);
@@ -22,7 +21,7 @@ const ParticlesComponent = (props) => {
     () => ({
       background: {
         color: {
-          value: "#000000", // Background color black
+          value: "#000000", // Fond noir
         },
       },
       fpsLimit: 120,
@@ -30,66 +29,80 @@ const ParticlesComponent = (props) => {
         events: {
           onClick: {
             enable: true,
-            mode: "repulse",
+            mode: "push",
           },
           onHover: {
             enable: true,
-            mode: 'grab',
+            mode: "repulse",
           },
         },
         modes: {
           push: {
-            distance: 200,
-            duration: 15,
+            quantity: 4,
           },
-          grab: {
-            distance: 150,
+          repulse: {
+            distance: 200,
+            duration: 0.4,
           },
         },
       },
       particles: {
         color: {
-          value: "#FFD700", // Star color gold
+          value: ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff"], // Couleurs variées
         },
         links: {
-          color: "#FFD700",
+          color: "#ffffff",
           distance: 150,
           enable: true,
-          opacity: 0.3,
+          opacity: 0.5,
           width: 1,
+        },
+        collisions: {
+          enable: false,
         },
         move: {
           direction: "none",
           enable: true,
           outModes: {
-            default: "bounce",
+            default: "out",
           },
           random: true,
-          speed: 1,
+          speed: 3,
           straight: false,
         },
         number: {
           density: {
             enable: true,
+            area: 800,
           },
-          value: 150,
+          value: 100,
         },
         opacity: {
-          value: 1.0,
+          value: 0.8,
         },
         shape: {
-          type: "star", // Shape of the particles
+          type: ["circle", "triangle", "star"],
         },
         size: {
-          value: { min: 1, max: 3 },
+          value: { min: 1, max: 5 },
         },
       },
       detectRetina: true,
     }),
-    [],
+    []
   );
 
-  return <Particles id={props.id} init={particlesLoaded} options={options} />;
+  if (init) {
+    return (
+      <Particles
+        id={props.id}
+        particlesLoaded={particlesLoaded}
+        options={options}
+      />
+    );
+  }
+
+  return <></>;
 };
 
 export default ParticlesComponent;

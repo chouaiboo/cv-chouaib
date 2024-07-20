@@ -1,9 +1,8 @@
 import React from 'react';
 import PageHeader from '../../../pageHeaderContent/PageHeader';
 import { FaUser, FaGraduationCap } from "react-icons/fa";
-import Particles from '../../Particle';
+import Particles from "../../Particle";
 import './Portfolio.css';
-
 const Portfolio = () => {
   const experiences = [
     {
@@ -58,7 +57,7 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
-      {/* <Particles /> */}
+      <Particles /> 
     </div>
   );
 }

@@ -2,8 +2,7 @@ import React from 'react';
 import PageHeader from '../../../pageHeaderContent/PageHeader';
 import { FaUser } from 'react-icons/fa';
 import './About.css';
-import Particles from '../../Particle';
-
+import Particles from "../../Particle";
 const About = () => {
   const info = [
     {
@@ -35,7 +34,7 @@ const About = () => {
   return (
 
   <>
-  {/* <Particles/> */}
+  <Particles/>
   
     <div className='about' id='about'>
       <PageHeader title="About Me" icon={<FaUser />} />

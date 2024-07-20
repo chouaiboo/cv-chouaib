@@ -1,11 +1,8 @@
-/* Particle.css */
-#tsparticles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0; /* Les particules devraient être derrière tout le contenu */
-  }
- 
-  
+.particles-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure particles are behind the content */
+}

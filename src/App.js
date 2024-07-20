@@ -6,7 +6,6 @@ import Portfolio from "./Components/Containers/portfolio/Portfolio";
 import Skills from "./Components/Containers/skills/Skills";
 import About from "./Components/Containers/about/About";
 import Contact from "./Components/Containers/conatct/Contact";
-import ParticlesComponent from "./Components/Particle";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./navbar/Navbar";
 
