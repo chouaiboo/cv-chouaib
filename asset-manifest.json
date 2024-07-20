@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/cv-chouaib/static/css/main.54802a27.css",
+    "main.js": "/cv-chouaib/static/js/main.b597c3eb.js",
+    "static/media/cv.jpg": "/cv-chouaib/static/media/cv.0af872b5db66dfb8dec3.jpg",
+    "index.html": "/cv-chouaib/index.html",
+    "main.54802a27.css.map": "/cv-chouaib/static/css/main.54802a27.css.map",
+    "main.b597c3eb.js.map": "/cv-chouaib/static/js/main.b597c3eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54802a27.css",
+    "static/js/main.b597c3eb.js"
+  ]
+}

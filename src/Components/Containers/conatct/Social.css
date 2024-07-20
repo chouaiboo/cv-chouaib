@@ -1,0 +1,42 @@
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 1;
+    
+  }
+  
+  .social-icon {
+    font-size: 2rem;
+    color: #504f4f;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .social-icon:hover {
+    transform: translateY(-5px);
+  }
+  
+  .social-icon::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    filter: blur(4px);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icon:hover::after {
+    opacity: 1;
+    transform: translateY(5px);
+  }
+  
+  /* Styles spécifiques pour chaque réseau social */
+  .social-icon:nth-child(1) { color: #1877F2; } /* Facebook */
+  .social-icon:nth-child(2) { color: #1DA1F2; } /* Twitter */
+  .social-icon:nth-child(3) { color: #0A66C2; } /* LinkedIn */
+  .social-icon:nth-child(4) { color: #333; }    /* GitHub */
