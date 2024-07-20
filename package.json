@@ -2,7 +2,7 @@
   "name": "cv-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://chouaiboo.github.io/cv-chouaib",
+"homepage": "http://chouaiboo.github.io/cv-project",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@tsparticles/react": "^3.0.0",
